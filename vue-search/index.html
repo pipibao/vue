@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<title>vue-仿百度搜索</title>
+<link rel="stylesheet" href="css1.css">
+<meta charset="utf-8">
+<script src="vue.js"></script>
+<script src="vue-resource.js"></script>
+<script src="v2.js"></script>
+</head>
+
+<body>
+<div id="box">
+	<input type="text" v-model = "v" @keyup="get($event)" class="inp" @keydown.down="getDown()" @keydown.up.prevent="getUp()" @keydown.13="turn()">
+	<ul v-show = "myData.length != 0" >
+		<li v-for="($value,$index) in myData" :class='{gray:$index == now}' @click='pick($index)'>
+		{{$value}}
+		</li>
+	</ul>
+	<input type="button" value="搜索" class="btn" @click.prevent="turn()" >
+</div>
+</body>
+</html>

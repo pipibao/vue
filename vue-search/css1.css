@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#box {
+	position: relative;
+	width: 500px;
+    margin: 100px auto;
+}
+#box > .inp {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400px;
+	height: 30px;
+	border: 2px solid #2060B7 ;
+	font-size: 20px;
+	
+	
+}
+#box > .btn {
+	position: absolute;
+	left: 404px;
+	top:0;
+	width: 100px;
+	height: 34px;
+	border: 2px solid #2060B7;
+	border-left: 0;
+	background: #2060B7;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	color: white;
+}
+#box > .btn:hover {
+	cursor: pointer;
+}
+#box > ul {
+	position: absolute;
+	top: 35px;
+	border: 1px solid #e7e7e3;
+	width: 400px;
+}
+#box > ul li {
+	margin-bottom: 2px;
+	font-size: 14px;
+}
+#box > ul li:hover {
+	background: #e7e7e3;
+}
+.gray {
+	background: #e7e7e3
+}
